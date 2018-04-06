@@ -1,0 +1,46 @@
+<html>
+<body>
+<p>Name: <input type="text" id="i1" value=""></p>
+
+<p>Father Name: <input type="text" id="i2" value=""></p>
+
+<p>Mother Name: <input type="text" id="i3" value=""></p>
+
+<button>Submit</button>
+<br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        if($("#i1").val()=="")
+		{    
+        alert("Name must be fill out!!" );
+		return false;
+		}
+		 if($("#i2").val()=="")
+		{    
+        alert("Father name must be fill out!!" );
+		return false;
+		}
+		if($("#i3").val()=="")
+		{    
+        alert("Mother name must be fill out!!" );
+		return false;
+		}
+		alert("ur name:"+$("#i1").val()+$("#i2").val()+$("#i3").val());
+		//$(document).text($("#i1").val());
+		$("#h1").text("ur name:"+$("#i1").val()+$("#i2").val()+$("#i3").val());
+		//$("#h2").text($("#i2").val());
+		//$("#h3").text($("#i3").val());
+    });
+});
+</script>
+<h3 id="h1"> </h3>
+<!--
+<h3 id="h2"> </h3>
+<h3 id="h3"> </h3>
+-->
+
+</body>
+</html>

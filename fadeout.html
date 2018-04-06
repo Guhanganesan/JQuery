@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<p id="p1">Toch here </p><br><br>
+<div id="div1" style="width:200px;height:200px;background-color:gray;border-radius:100px;"></div><br>
+<div id="div2" style="width:200px;height:200px;background-color:orange;border-radius:100px;"></div><br>
+<div id="div3" style="width:200px;height:200px;background-color:green;border-radius:100px;"></div>
+<script>
+$(document).ready(function(){
+    $("#p1").hover(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut(3000);
+    });
+});
+</script>
+</body>
+</html>
+

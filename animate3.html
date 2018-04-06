@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<p> Touch</p>
+
+
+<div style="background:blue;height:100px;width:100px;position:absolute;"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $("div").animate({
+            width: 'toggle'
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
+

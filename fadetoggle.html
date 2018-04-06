@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<button>click </button>
+
+<div id="div1" style="width:200px;height:200px;background-color:red;border-radius:100px;"></div>
+<br>
+<div id="div2" style="width:200px;height:200px;background-color:green;border-radius:100px;"></div>
+<br>
+<div id="div3" style="width:200px;height:200px;background-color:blue;border-radius:100px;"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle(3000);
+        $("#div2").fadeToggle(3000);
+        $("#div3").fadeToggle(3000);
+    });
+});
+</script>
+
+</body>
+</html>
+

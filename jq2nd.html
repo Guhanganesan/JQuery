@@ -1,0 +1,69 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $("button").click(function()
+	{
+		$(".p1").css("background-color","pink");
+	});
+	$("h2").mouseover(function()
+	{
+		$(".p1").css("background-color","green");
+	});
+	$("h3").click(function()
+	{
+		$(".p1").fadeIn();
+	});
+	$(".x1").click(function()
+	{
+		$(".p1").hide();
+	});
+	$(".x2").click(function()
+	{
+		$(".p1").show();
+	});
+	
+	$(".x3").click(function()
+	{
+		$(".p1").toggle(1000);
+	});
+	$(".x4").click(function()
+	{
+		$("div").animate(
+		
+		 {width:"200px", height:"200px", padding:"20px",marginLeft:"20px"}
+		
+		);
+	});
+	
+	
+	
+});
+</script>
+</head>
+<body>
+<button> click</button>
+
+<p class="p1">My name is Donald.</p>
+
+<h2>Mouseoverme </h2>
+
+<h3>click(fadeIn)</h3>
+
+<h4>click(fadeOut)</h4>
+
+<h4 class="x1"> Click for hide</h4>
+
+<h4 class="x2"> Click for show</h4>
+
+<h4 class="x3"> Click for Toggle</h4>
+
+<h4 class="x4"> Click for Animate</h4>
+
+<div style="border:1px solid red; background-color:pink; width:100px; height:100px;">
+
+<h1>Payilagam</h1>
+</div>
+</body>
+</html>

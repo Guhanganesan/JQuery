@@ -1,0 +1,31 @@
+<html>
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: blue;
+	color:white;
+    border:black;
+}
+
+#panel {
+    background-color: red;
+    padding: 50px;
+	
+}
+</style>
+
+<body>
+<div id="flip">Click here...</div>
+<div id="panel">Hello.....</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideUp("slow");
+    });
+});
+</script>
+ </body>
+</html>
+

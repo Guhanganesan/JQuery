@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+.p3 {
+    font-size:28;
+    color: red;
+	background-color:pink;
+	width:200;
+}
+</style>
+</head>
+<body>
+
+<p id="p1">Move here</p>
+
+<p id="p2">Thank you!!!</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").hover(function(){
+        $("#p2").addClass("p3");
+    });
+});
+</script>
+
+</body>
+</html>

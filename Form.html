@@ -1,0 +1,31 @@
+<html>
+
+<body>
+
+<p>Name: <input type="text" id="i1" value=""></p>
+
+<p>Father Name: <input type="text" id="i2" value=""></p>
+
+<p>Mother Name: <input type="text" id="i3" value=""></p>
+
+<button>Submit</button>
+
+<p id="p1"> </p>
+<p id="p2"> </p>
+<p id="p3"> </p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $("button").click(function(){
+       
+		$("#p1").text($("#i1").val());
+		$("#p2").text($("#i2").val());
+		$("#p3").text($("#i3").val());
+	
+	});
+});
+</script>
+
+</body>
+</html>
+

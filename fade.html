@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<p>view/hide</p>
+
+
+<form style="display:none; border:1px solid blue;padding:10px;width:400px;" >
+     <img src="F:\JQ\JQ\Jq1\cross.jpg" style="width:50;height:50;
+	 margin-left:400px;border:1px solid blue;border-radius:100px;margin-top:-10px;"/><br>
+	 <p>Quick Enquiry </p>
+   <label> Name: </label> <input type="text" /><br><br>
+   <label> Mobile: </label> <input type="text" /><br><br>
+	<label>Email: </label> <input type="text" /><br><br>
+	<label>Pass: </label>  <input type="text" /><br><br>
+	  <input type="submit"  value="submit" /><br><br>
+</form>
+
+<script>
+$(document).ready(function(){
+         $(window).load(function(){  //    $("body").hover(function()
+        $("form").fadeIn();
+        		// sow();
+        
+    });
+	/*$("img").click(function(){
+	$("form").hide(); // hide()
+	});
+	/*
+	$("p").click(function(){
+	$("form").fadeToggle(); // hide()
+	});*/
+	$("img").click(function(){
+        $("form").animate({	
+							marginLeft: '350px',
+							marginTop: '350px',
+							width:'100px',
+							height:'100px',
+							bgcolor:'pink'
+							
+		       });
+			   
+			   $("input").hide();
+			   $("img").hide();
+			   $("label").hide();
+			   $("p").text("Quick Enquiry");
+    });
+	
+	
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+

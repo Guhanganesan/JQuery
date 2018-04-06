@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<h3 id="h3">Sachin</h2>
+<button id="b1">click</button>
+<script>
+$(document).ready(function(){
+    $("#b1").click(function(){
+        $("#h3").prepend(" <b>Tendulkar</b>");
+    });
+ });
+/*To insert content at the beginning of the selected elements, use the prepend() method.*/
+</script>
+</body>
+</html>

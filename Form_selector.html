@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+      <h2> d<span style="color:red">s</span>lglh</h2>
+      <p class="x1">Guhan </p>
+      Name: <input id="i1" ></input><br><br>
+      Father: <input type="text" ></input><br><br>
+      Mother: <input></input><br><br>
+      Email: <input disabled ></input><br><br>
+      Pass: <input type="password" ></input><br><br>
+	  Gender: <input type="radio" /><br><br>
+	  Language: <input type="checkbox" /><br><br>
+	  Mobiles:
+		<select>
+		  <option selected="selected">Nokia</option>
+		  <option>Samsung</option>
+		  <option><span style="background-color:pink;">Micro</span></option>
+		  <option style="background-color:blue;">Apple</option>
+		</select>
+	  
+      <script>
+	        $(function(){
+			   $(":input").css("color", "red");
+			   $("#i1").focus();
+			   $(":focus").css("color","green");
+			   $(":empty").css("background-color", "pink");
+			   $("[class]").css("background-color", "yellow");
+			  // $(":text").css("color", "orange");
+			   $(":password").css("color", "green");
+			   $(":radio").wrap("<span style='background-color:green'>");
+			   $(":checkbox").wrap("<span style='background-color:red'>");
+			   $(":disabled").css("background-color","yellow");
+			   $(":selected").css("background-color", "green");
+			});
+	  
+	   </script>
+
+</body>
+
+</html>

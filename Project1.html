@@ -1,0 +1,96 @@
+<html>
+
+<style>
+#div1 {
+    height:40;
+    
+    
+    border: solid 1px: red;
+}
+
+#div2 {
+    background-color: red;
+	height:300;
+    padding: 50px;
+    display: none;
+}
+a{color:white;}
+button{margin-left:-1px;}
+p{color:white;font-size:30px;}
+
+ul li {border:1px solid blue; width:100px; float:left;}
+
+ul li:hover {background-color: red;}
+
+ul li ul li { background-color: yellow;}
+
+ul li ul {position: absolute;	 width: 200px;display: none;}
+
+ul li:hover ul {display:block;}
+
+
+
+
+</style>
+<body>
+
+
+<div id="div1"> <img id="im1" src="C:\Users\PayilagamServer\Desktop\menu.jpg" width="40" height="40"/>
+                <img src="C:\Users\PayilagamServer\Desktop\Capture.png" width="1000" 
+				height="40" style="margin-left:-4px;z-index:-1;position:absolute;"> </img>
+				<div id="d1" style="margin-top:-50px; display:none;">
+				<ul type="none">
+				<li>
+				 <a href="#">DEPT</a>
+				  <ul type="none">
+					<li><a href="#">ECE</a></li>
+					<li><a href="#">EEE</a></li>
+					<li><a href="#">MECH</a></li>
+				  </ul>
+				</li>
+		
+				<li> <a href="#">LIBRARY</a>  </li>
+				<li> <a href="#">SPORTS</a>  </li>
+				</ul>
+				</div>
+  
+</div>
+
+
+
+
+
+
+
+<div id="div2">
+Helo!!!!!......
+<p> 
+
+Abraham Lincoln  February 12, 1809 – April 15, 1865) was an American politician 
+and lawyer who served as the 16th President of the United States from March 1861
+ until his assassination in April 1865. Lincoln led the United States through its
+ Civil War—its bloodiest war and perhaps its greatest moral, constitutional, 
+ and political crisis.[2][3] In doing so, he preserved the Union, paved the way 
+ to the abolition of slavery, strengthened the federal government, and modernized the economy.
+
+ </p>
+<img src="C:\Users\PayilagamServer\Desktop\Abraham_Lincoln.jpg" width="200" height="200"> </img>
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#im1").click(function(){
+        $("#d1").slideToggle();
+    });
+	
+});
+</script>
+ 
+ 
+</body>
+</html>
+
